@@ -10,7 +10,8 @@ Pod::Spec.new do |spec|
   spec.author             = { "Alek Åström" => "alek.astrom@gmail.com" }
   spec.social_media_url   = "https://twitter.com/MisterAlek"
 
-  spec.platform     = :ios
+  spec.visionos.deployment_target = '1.0'
+  spec.ios.deployment_target = '13.0'
 
   spec.source       = { :git => "https://github.com/MrAlek/libyuv-ios.git", :tag => "#{spec.version}" }
 
